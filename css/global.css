@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/background2.png);
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 7vh;
+    width: 100vw;
+    background-color:rgba(148, 21, 21, 0.2);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+section{
+ width: 100vw;
+ height: 100vh;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+}
+
+nav {
+  display: inline-block;
+  text-align: center;
+  word-spacing: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+
+a {
+  font-size: 1.3em;
+  color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover, a:active {
+  color: rgba(250, 109, 35, 0.67);
+}
+a:active {
+  text-decoration-line: line-through;
+}
+
+#pied {
+  word-spacing: normal;
+}
+
+/*----- Section Accueil -------*/
+
+#Accueil, #Bas {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#blocklol {
+    background-color: rgba(148, 21, 21, 0.2);
+    width: 45vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+/*----- Section Inscription -----*/
+
+#Inscription {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+table {
+  width: 800px;
+}
+
+form{
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+	  min-width: 400px;
+	  max-width: 800px;
+    color: white;
+    font-size: 1.1em;
+}
+
+form > fieldset{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    background-color: rgba(148, 21, 21, 0.2);
+	  border: none;
+}
+
+.colonne {
+	  padding: 3%;
+    flex: 1 0 40%;
+}
+
+.colonne:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding-right: 5%;
+}
+
+.colonne:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.colonne fieldset {
+    display: flex;
+    justify-content: space-between;
+}
+
+#boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 80%;
+	  padding: 2%;
+}
+
+label>input:checked ~ span {
+    background-position: -14px 0px;
+}
+
+/*----- Section Tableau -----*/
+
+table {
+    height: 600px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  th[scope="col"]{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(227, 112, 71, 0.36);
+    color: white;
+  }
+  
+  th, td{
+    border : 2px solid black;
+  }
+  
+  td {
+    width: 145px;
+    font-size: 1.2em;
+    font-style: oblique;
+    font-weight: bold;
+    background-color: rgba(254, 239, 223, 0.22);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  th {
+    width: 75px;
+    background-color: rgba(227, 112, 71, 0.36);
+    color: white;
+  }
+  
+  caption {
+    padding: 3%;
+    caption-side: top;
+    background-color: rgba(250, 109, 35, 0.67);
+    border: 2px solid black;    
+    color: white;
+    font-size: large;
+  }
+              
+  tfoot td {
+    background-color: rgba(250, 109, 35, 0.67);
+    color: white;
+  }
+
+  .web1, .jeu1, .comple11, .comple21 {
+    background: rgba(254, 255, 116, 0.21);
+  }
+
+  /*----- Section Article -----*/
+  #Articles {
+    text-align: center;
+  }
+  #uno, #dos {
+    margin: 0 auto;
+    width: 50vh;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.3em;
+  }
+
+  /*----- Section Vidéeo -----*/
+  #Video>div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #videos, #videos2, #videos3, #videos4 {
+    flex: 0 0 40%;
+  }
+
+  #Video>h1 {
+    text-align: center;
+  }
+
+  iframe {
+    width: 460px;
+    height: 315px;
+  }
+
+  /*----- Section Galerie d'image -----*/
+  #Galerie>div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #Galerie>h1 {
+    text-align: center;
+  }
+
+  /*----- Section Pied de page -----*/
+
+  #blocklol2 {
+    background-color: rgba(148, 21, 21, 0.2);
+    width: 60vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-overflow: clip;
+    text-align: center;
+  }
+
+  #blocklol2>p {
+    font-size: 1.3em;
+  }
+
+  #blocklol2>a {
+   font-size: 1.2em; 
+  }
+
+  
